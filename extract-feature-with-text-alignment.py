@@ -1,14 +1,3 @@
-#!/usr/bin/env python3
-#SBATCH --job-name="qwen-extraac"
-#SBATCH --time=48:00:00
-#SBATCH --ntasks=1
-#SBATCH --cpus-per-task=4
-#SBATCH --mem=200G
-#SBATCH --partition=gpu
-#SBATCH --gres=gpu:A100
-#SBATCH --output=qwen.txt
-# this code is to extract features from qwen model
-
 import os
 import h5py
 from tqdm import tqdm
